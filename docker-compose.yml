@@ -5,14 +5,9 @@ services:
     build: 
       context: ./backend
       dockerfile: Dockerfile
-    
-    env_file:
-      - .env
-    
-    # or 
-    # environment:
-      #- BACKEND_PORT=7001   # if you change the port, make sure to also change the VITE_WS_BACKEND_URL at frontend/.env.local
-      # - OPENAI_API_KEY=your_openai_api_key
+    environment:
+      BACKEND_PORT: 7001  # Remplacez par votre valeur de port
+      OPENAI_API_KEY: your_openai_api_key  # Remplacez par votre clé API
     
     ports:
       - "${BACKEND_PORT:-7001}:${BACKEND_PORT:-7001}"
