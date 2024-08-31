@@ -18,5 +18,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    environment:
+      VITE_HTTP_BACKEND_URL: http://124.10.20.1:7001
+      VITE_WS_BACKEND_URL: ws://124.10.20.1:7001
     ports:
       - "5173:5173"
