@@ -19,7 +19,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     environment:
-      VITE_HTTP_BACKEND_URL: http://124.10.20.1:7001
-      VITE_WS_BACKEND_URL: ws://124.10.20.1:7001
+      VITE_HTTP_BACKEND_URL: http://s0gkskgcck844kc0s0cwsw4k.51.222.9.34.sslip.io
+      VITE_WS_BACKEND_URL: ws://s0gkskgcck844kc0s0cwsw4k.51.222.9.34.sslip.io
     ports:
       - "5173:5173"
